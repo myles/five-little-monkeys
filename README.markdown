@@ -28,7 +28,7 @@ Five Little Monkeys
 > No more monkeys jumping on the bed
 > 
 > One little monkeys jumping on the bed<br/>
-> One fell off and bumped his head<br/>
+> They fell off and bumped their head<br/>
 > Mama called the doctor,<br/>
 > And the doctor said<br/>
 > Put those monkeys right to bed
