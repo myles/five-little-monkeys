@@ -8,7 +8,7 @@ NUMBERS = {
 
 
 def main():
-    for key, value in NUMBERS.iteritems():
+    for key, value in reversed(NUMBERS.items()):
         if key == 1:
             print("%s little monkey jumping on the bed" % value)
             print("They fell off and bumped their head")
