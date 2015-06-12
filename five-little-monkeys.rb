@@ -1,14 +1,3 @@
-lyrics = "%{number} little monkeys jumping on the bed
-One fell off and bumped his head
-Mama called the doctor,
-And the doctor said
-%{last_line}\n
-"
-
-last_line = 'No more monkeys jumping on the bed'
-
-last_last_line = 'Put those monkeys right to bed'
-
 numbers = {
   1 => 'One',
   2 => 'Two',
@@ -18,7 +7,20 @@ numbers = {
 }
 
 (1..5).reverse_each do |x|
-  last_line = last_last_line if x == 1
+  if x == 1
+		puts "#{numbers[x]} little monkey jumping on the bed"
+    puts 'They fell off and bumped their head'
+  else
+		puts "#{numbers[x]} little monkeys jumping on the bed"
+    puts 'One fell off and bumped their head'
+  end
 
-  puts lyrics % { number: numbers[x], last_line: last_line }
+  puts 'Mama called the doctor,'
+  puts 'And the doctor said'
+
+  if x == 1
+    puts 'Put those monkeys right to bed', ''
+  else
+    puts 'No more monkeys jumping on the bed', ''
+  end
 end

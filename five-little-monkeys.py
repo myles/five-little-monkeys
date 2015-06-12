@@ -1,30 +1,28 @@
-LYRICS = """%(number)s little monkeys jumping on the bed
-One fell off and bumped his head
-Mama called the doctor,
-And the doctor said
-%(last_line)s
-"""
-
-LAST_LINE = "No more monkeys jumping on the bed"
-LAST_LAST_LINE = "Put those monkeys right to bed"
-
 NUMBERS = {
-    1: 'One',
-    2: 'Two',
-    3: 'Three',
+    5: 'Five',
     4: 'Four',
-    5: 'Five'
+    3: 'Three',
+    2: 'Two',
+    1: 'One',
 }
 
 
 def main():
-    for x in reversed(range(1, 6)):
-        if x == 1:
-            last_line = LAST_LAST_LINE
+    for key, value in NUMBERS.iteritems():
+        if key == 1:
+            print("%s little monkey jumping on the bed" % value)
+            print("They fell off and bumped their head")
         else:
-            last_line = LAST_LINE
+            print("%s little monkeys jumping on the bed" % value)
+            print("One fell off and bumped their head")
 
-        print LYRICS % {'number': NUMBERS[x], 'last_line': last_line}
+        print("Mama called the doctor")
+        print("And the doctor said")
+
+        if key == 1:
+            print("Put those monkeys right to bed\n")
+        else:
+            print("No more monkeys jumping on the bed\n")
 
 if __name__ == "__main__":
     main()
