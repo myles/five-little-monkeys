@@ -1,3 +1,8 @@
+
+/*global
+    console
+*/
+
 'use strict';
 
 var numberOfMonkeys = ["Five", "Four", "Three", "Two", "One"];
