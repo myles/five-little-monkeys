@@ -26,6 +26,5 @@ for my $key ( sort {$b<=>$a} keys %numbers) {
         print "Put those monkeys right to bed\n\n";
     } else {
         print "No more monkeys jumping on the bed\n\n"
-    }
-    
+    }   
 }
