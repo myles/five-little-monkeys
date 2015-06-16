@@ -1,0 +1,49 @@
+$numbers: ( 5: One, 4: Two, 3: Three, 2: Four, 1: Five );
+
+@each $key, $value in $numbers {
+	p.stanza-#{$key} {
+		@if $key == 5 {
+			span.line-1 {
+				content: "#{$value} little monkey jumping on the bed";
+			}
+			span.line-2 {
+				content: "They fell off and bumped their head";
+			}
+			
+			span.line-5 {
+				content: "Put those monkeys right to bed";
+			}
+		} @else {
+			span.line-1 {
+				content: "#{$value} little monkeys jumping on the bed";
+			}
+			span.line-2 {
+				content: "One fell off and bumped their head";
+			}
+			
+			span.line-5 {
+				content: "No more monkeys jumping on the bed";
+			}
+		}
+	}
+}
+
+p {
+	span.line-3 {
+		content: "Mama called the doctor";
+	}
+	span.line-4 {
+		content: "And the doctor said";
+	}
+}
+
+/*
+	HTML
+	====
+	
+	<p class="stanza-1"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span><span class="line-4"></span><span class="line-5"></span></p>
+	<p class="stanza-2"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span><span class="line-4"></span><span class="line-5"></span></p>
+	<p class="stanza-3"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span><span class="line-4"></span><span class="line-5"></span></p>
+	<p class="stanza-4"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span><span class="line-4"></span><span class="line-5"></span></p>
+	<p class="stanza-5"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span><span class="line-4"></span><span class="line-5"></span></p>
+*/
