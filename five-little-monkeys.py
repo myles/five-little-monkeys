@@ -16,7 +16,7 @@ def main():
             print("%s little monkeys jumping on the bed" % value)
             print("One fell off and bumped their head")
 
-        print("Mama called the doctor")
+        print("Mama called the doctor,")
         print("And the doctor said")
 
         if key == 1:

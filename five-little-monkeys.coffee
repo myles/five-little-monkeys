@@ -14,7 +14,7 @@ for key, value of numberOfMonkeys
     console.log "#{ value } little monkeys jumping on the bed"
     console.log 'One fell off and bumped their head'
   
-  console.log 'Mama called the doctor'
+  console.log 'Mama called the doctor,'
   console.log 'And the doctor said'
   
   if value == 'One'

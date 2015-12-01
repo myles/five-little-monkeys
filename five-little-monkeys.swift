@@ -6,14 +6,14 @@ let numberOfMonkeys: [Int:String] = [
 	5: "Five"
 ]
 
-let sortedNumberOfMonkeys = numberOfMonkeys.sort {$0.0 < $1.0}
+let sortedNumberOfMonkeys = numberOfMonkeys.sort {$0.0 > $1.0}
 
 for (index, (key, value)) in sortedNumberOfMonkeys.enumerate() {
 	if key == 1 {
-		print("\(value) little moneky jumping on the bed")
+		print("\(value) little monkey jumping on the bed")
 		print("They fell off and bumped their head")
 	} else {
-		print("\(value) little monekys jumping on the bed")
+		print("\(value) little monkeys jumping on the bed")
 		print("One fell off and bumped their head")
 	}
 	
