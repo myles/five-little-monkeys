@@ -1,35 +1,17 @@
 Five Little Monkeys
 ===================
 
-## Nursery Rhyme
+	$ python tests/tests.py -v
+	test_coffeescript (__main__.TestEverything) ... ok
+	test_golang (__main__.TestEverything) ... ok
+	test_nodejs (__main__.TestEverything) ... ok
+	test_perl (__main__.TestEverything) ... ok
+	test_php (__main__.TestEverything) ... ok
+	test_python (__main__.TestEverything) ... ok
+	test_ruby (__main__.TestEverything) ... ok
+	test_swift (__main__.TestEverything) ... ok
 
-> Five little monkeys jumping on the bed<br/>
-> One fell off and bumped his head<br/>
-> Mama called the doctor,<br/>
-> And the doctor said<br/>
-> No more monkeys jumping on the bed
-> 
-> Four little monkeys jumping on the bed<br/>
-> One fell off and bumped his head<br/>
-> Mama called the doctor,<br/>
-> And the doctor said<br/>
-> No more monkeys jumping on the bed
-> 
-> Three little monkeys jumping on the bed<br/>
-> One fell off and bumped his head<br/>
-> Mama called the doctor,<br/>
-> And the doctor said<br/>
-> No more monkeys jumping on the bed
-> 
-> Two little monkeys jumping on the bed<br/>
-> One fell off and bumped his head<br/>
-> Mama called the doctor,<br/>
-> And the doctor said<br/>
-> No more monkeys jumping on the bed
-> 
-> One little monkeys jumping on the bed<br/>
-> They fell off and bumped their head<br/>
-> Mama called the doctor,<br/>
-> And the doctor said<br/>
-> Put those monkeys right to bed
+	----------------------------------------------------------------------
+	Ran 8 tests in 0.773s
 
+	OK
