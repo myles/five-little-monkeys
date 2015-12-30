@@ -69,6 +69,17 @@ class TestEverything(unittest.TestCase):
         ])
         self.assertMultiLineEqual(result, self.five_little_monkeys)
 
+    def test_rust(self):
+        compile_rust = subprocess.check_output([
+            'rustc',
+            '--out-dir=./tests/tmp/',
+            './five-little-monkeys.rs'
+        ])
+        result = subprocess.check_output([
+            './tests/tmp/five-little-monkeys'
+        ])
+        self.assertMultiLineEqual(result, self.five_little_monkeys)
+
 
 if __name__ == '__main__':
     unittest.main()
