@@ -80,6 +80,24 @@ class TestEverything(unittest.TestCase):
         ])
         self.assertMultiLineEqual(result, self.five_little_monkeys)
 
+    def test_scss(self):
+        result = subprocess.check_output([
+            'sassc',
+            'five-little-monkeys.scss'
+        ])
+
+        with open('./tests/tmp/five-little-monkeys.html', 'w') as f:
+            f.write('<!DOCTYPE html>\n<html>\n<head>\n')
+            f.write("<title>Five Little Monkey's</title>\n")
+            f.write('<style>\n')
+            f.write(result)
+            f.write('</style>\n</head>\n<body>\n')
+            for stanza in range(1, 6):
+                f.write('<div class="stanza stanza-%s">\n' % stanza)
+                for line in range(1, 6):
+                    f.write('<p class="line line-%s"></p>\n' % line)
+                f.write('</div>\n')
+            f.write('</body>\n</html>\n')
 
 if __name__ == '__main__':
     unittest.main()
