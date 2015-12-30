@@ -9,9 +9,10 @@ Five Little Monkeys
 	test_php (__main__.TestEverything) ... ok
 	test_python (__main__.TestEverything) ... ok
 	test_ruby (__main__.TestEverything) ... ok
+	test_rust (__main__.TestEverything) ... ok
 	test_swift (__main__.TestEverything) ... ok
-
+	
 	----------------------------------------------------------------------
-	Ran 8 tests in 0.773s
-
+	Ran 9 tests in 3.337s
+	
 	OK
